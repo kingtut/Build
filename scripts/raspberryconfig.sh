@@ -49,8 +49,8 @@ sudo curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/Hexx
 touch /boot/start.elf
 mkdir /lib/modules
 
-# Kernel 4.1.21 for Pi3 Support
-echo y | SKIP_BACKUP=1 rpi-update dea25fa62132365c11087e51e416df656db28bf3
+# Kernel 4.4.9 for Pi3 Support
+echo y | SKIP_BACKUP=1 rpi-update 4ce3f4a00648faaa73c7e7d41ff09be83a25bc0a
 
 echo "Adding PI3 Wireless firmware"
 wget https://github.com/RPi-Distro/firmware-nonfree/raw/master/brcm80211/brcm/brcmfmac43430-sdio.bin -P /lib/firmware/brcm
